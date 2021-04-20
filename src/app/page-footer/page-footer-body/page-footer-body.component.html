@@ -1,0 +1,218 @@
+<!-- <footer> -->
+<ng-container *ngIf="footer; else contactuspage ">
+  <div class="footer_container col-md-12 justify-content-center  p-0">
+    <div class="col-md-12 row mx-0 py-5 px-3  justify-content-center ">
+      <div class="col-md-5 m-0 p-0">
+        <ng-container *ngTemplateOutlet="googleMap"></ng-container>
+      </div>
+      <div class="col-md-2 mx-5">
+        <div class="col-md-12">
+          <ng-container *ngTemplateOutlet="aboutCurative"></ng-container>
+        </div>
+        <div class="col-md-12 p-0">
+          <ng-container *ngTemplateOutlet="addressContainer"></ng-container>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <ng-container *ngTemplateOutlet="contactForm;context:{type:'type'}"></ng-container>
+      </div>
+    </div>
+    <div class="container copy_right m-0 col-md-12">
+      <ng-container *ngTemplateOutlet="copyRights"></ng-container>
+    </div>
+  </div>
+</ng-container>
+
+
+<ng-template #contactuspage>
+  <div class="container px-0 col-md-12 mt-5 h-100" style="background-color: skyblue;">
+    <div class="container col-md-10 mx-auto my-3 justify-content-center text-center"  >
+      <h2>our Aim</h2>
+      <div class="col-md-12">
+        Curative health studio is all about giving health. We generally do the health screening and assessment based training, we give a customised workout plan for ones fitness goal and needs...
+      </div>
+    </div>
+    <div class="footer_container col-md-12 row mx-0 my-0 p-0 ">
+      <div class="col-md-6 m-0 p-0 justify-content-center text-center mac_view">
+        <!-- <img class="img-fluid" src="../../assets/images/macbookpro.png" alt="Los Angeles"> -->
+        <ng-container *ngTemplateOutlet="googleMap"></ng-container>
+      </div>
+      <div class="col-md-6 row p-0 m-0 contact_address justify-content-center">
+        <div class="col-md-5 m-0 p-0">
+          <ng-container *ngTemplateOutlet="addressContainer"></ng-container>
+        </div>
+
+        <div class="col-md-4 mx-4">
+          <ng-container *ngTemplateOutlet="contactForm;context:{type:'type2'}"></ng-container>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 px-0 h-100 contact_footer">
+      <ng-container *ngTemplateOutlet="copyRights"></ng-container>
+    </div>
+  </div>
+</ng-template>
+
+<!-- *ngTemplateOutlet="formValue;context:{data:formdata}" -->
+<ng-template #googleMap>
+  <div class="embed-responsive embed-responsive-1by1 mac_view">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.45783184971!2d80.2214475!3d13.0442984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf421cb1d65a63ecb!2sCurative+Health+Studio!5e0!3m2!1sen!2sin!4v1566478627049!5m2!1sen!2sin"
+      class="embed-responsive-item" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>
+  </div>
+</ng-template>
+
+<ng-template #aboutCurative>
+  <header>
+    <h4>About us</h4>
+  </header>
+  <p style="color: #808080 !important">
+    Curative health studio is all about giving health. We generally do the health screening and assessment based training, we give a customised workout plan for ones fitness goal and needs...
+  </p>
+</ng-template>
+
+<ng-template #addressContainer>
+  <section class="h-30 address col-lg-12 ">
+    <table class="table custom_table table-responsive-md" style="color: #808080 !important">
+      <tbody>
+        <tr>
+          <td class="align-top">
+            <i class="fa fa-location-arrow" style="font-size:27px !important"></i>
+          </td>
+          <td>
+            <header>
+              <h4>Address</h4>
+            </header>
+            <p>
+              No 17/17, Umapathy Street<br>
+              Brindavan Extension, <br>
+              Kodambakkam, <br>
+              Chennai - 600033<br>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-10x fa-mobile" style="font-size:35px !important"></i>
+          </td>
+          <td>
+            <span>044-45566832 / 63851 85317 / 63851 85817 / 63851 85917</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-8x fa-at" style="font-size:24px !important"></i>
+          </td>
+          <td>
+            <span>info@curativehealthstudio.com</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!--<section class="h-30 careers col-md-12 ">
+    <header>
+      <h4>careers</h4>
+      <form>
+        <div class="form-group">
+          <input class="form-control" placeholder="*****@example.com">
+        </div>
+      </form>
+    </header>
+  </section>-->
+</ng-template>
+
+<ng-template #contactForm let-type=type>
+  <header>
+    <h4>Enquiry Form</h4>
+  </header>
+  <!--  -->
+  <form [formGroup]="enquiryFrom" (ngSubmit)="submitForm(enquiryFrom)">
+    <div class="row">
+      <div [ngClass]="[type=='type1'?'col-md-5':'col-md-12']">
+        <div class="form-group mb-4">
+          <input type="text" class="form-control" formControlName="name"
+            [ngClass]="{'is-invalid':submitted && formInstance.name.errors,'is-valid':submitted && !formInstance.age.errors}"
+            placeholder="Name">
+          <div *ngIf="submitted && formInstance.name.errors" class="invalid-feedback">
+            <div *ngIf="formInstance.name.errors.required">Name is required</div>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <input type="number" class="form-control " formControlName="age"
+            [ngClass]="{'is-invalid':submitted && formInstance.age.errors ,'is-valid':submitted && !formInstance.age.errors}"
+            placeholder="Age">
+          <div *ngIf="submitted && formInstance.age.errors" class="invalid-feedback">
+            <div *ngIf="formInstance.age.errors.required">Age is required</div>
+          </div>
+        </div>
+        <div class="form-group radio-group mb-4"
+          [ngClass]="{'is-invalid':submitted && formInstance.sex.errors ,'is-valid':submitted && !formInstance.sex.errors}">
+          <label>Sex</label>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="sex" formControlName="sex" value="male">
+            <label class="form-check-label">M</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" name="sex" formControlName="sex" value="female">
+            <label class="form-check-label">F</label>
+          </div>
+          <div *ngIf="submitted && formInstance.sex.errors" class="invalid-feedback">
+            <div *ngIf="formInstance.sex.errors.required">Sex is required</div>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <input type="email" class="form-control" formControlName="email" placeholder="*****@example.com"
+            [ngClass]="{'is-invalid':submitted && formInstance.email.errors}">
+          <div *ngIf="submitted && formInstance.email.errors" class="invalid-feedback">
+            <div *ngIf="formInstance.email.errors.required">Email is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <select class="custom-select" required formControlName="option">
+            <option>Fitness</option>
+            <option>Rehab</option>
+            <option>Physio</option>
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
+        </div>
+        <div class="form-group">
+          <textarea rows="4" class="form-control" formControlName="textarea" placeholder="Personal Query"></textarea>
+        </div>
+        <button type="submit" class="btn custom-button">submit</button>
+
+      </div>
+      <!-- <ng-container> -->
+      <!-- <div class="col-md-7" [ngClass]="[type=='type1'?'col-md-5':'col-md-12']">
+            <div class="form-group">
+              <textarea rows="8" class="form-control" formControlName="textarea"
+                placeholder="Personal Query"></textarea>
+            </div>
+            <button type="submit" class="btn custom-button">submit</button>
+          </div> -->
+      <!-- </ng-container> -->
+    </div>
+  </form>
+</ng-template>
+
+<ng-template #copyRights>
+  <!--<div class="hori_line_separator"></div>
+  <div class="row h-100 justify-content-center align-items-center my-0">
+    <div class="col-md-4"></div>
+    <section class="col-md-4" style="text-align: center">
+       <app-socialmedia></app-socialmedia> 
+    </section>
+    <div class="col-md-4"></div>
+  </div>-->
+  <div class="row justify-content-center align-items-center pt-3">
+    <p style="margin: 0% !important">Copyright 2019 <a href="JavaScript:Void(0)"> Curative Fitness Studio</a>. All
+      Rights Reserved. </p>
+  </div>
+  <div class="row justify-content-center align-items-center mt-3">
+    <p>Website designed <i class="icon-heart3"></i> by <a href="JavaScript:Void(0)">Sanshu Technologies</a>
+    </p>
+  </div>
+</ng-template>
+<!-- </footer> -->

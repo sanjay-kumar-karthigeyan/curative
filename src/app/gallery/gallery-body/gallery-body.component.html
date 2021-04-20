@@ -1,0 +1,75 @@
+<div class="col-md-12 p-5">
+  <div class="text-center">
+    <button type="button" class="btn "
+      [ngClass]="{'btn-primary':switch_expression == 'imageContainer', 'btn-secondary': switch_expression != 'imageContainer'}"
+      (click)="switch_expression = 'imageContainer'">Images</button>
+    <!--<button type="button" class="btn "
+      [ngClass]="{'btn-primary':switch_expression == 'videoContainer', 'btn-secondary': switch_expression != 'videoContainer'}"
+      (click)="switch_expression = 'videoContainer'">Videos</button>
+    <button type="button" class="btn "
+      [ngClass]="{'btn-primary':switch_expression == 'imagefullview', 'btn-secondary': switch_expression != 'imagefullview'}"
+      (click)="switch_expression = 'imagefullview'">360°</button>-->
+
+    <ng-container [ngSwitch]="switch_expression">
+      <ng-container *ngSwitchCase="'imageContainer'">
+        <ng-container *ngTemplateOutlet="imageContainer"></ng-container>
+      </ng-container>
+
+      <!-- <ng-container *ngSwitchCase="'videoContainer'">
+        <ng-container *ngTemplateOutlet="videoContainer"></ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'imagefullview'">
+
+      </ng-container> -->
+    </ng-container>
+
+
+    <ng-template #imageContainer>
+        <app-carousel></app-carousel>
+    </ng-template>
+
+    <ng-template #videoContainer>
+      <div class="h-100 row col-md-12 justify-content-center mx-auto row">
+        <div class="mx-3 my-3 col-md-3  embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class=" mx-3 my-3 col-md-3 embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class=" mx-3 my-3 col-md-3 embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class="mx-3 my-3 col-md-3  embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class=" mx-3 my-3 col-md-3 embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class=" mx-3 my-3 col-md-3 embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class="mx-3 my-3 col-md-3  embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class=" mx-3 my-3 col-md-3 embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+        <div class=" mx-3 my-3 col-md-3 embed-responsive embed-responsive-1by1">
+          <iframe id="player" type="text/html" class="embed-responsive-item"
+            src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+        </div>
+      </div>
+    </ng-template>
+
+  </div>
+</div>
+
+

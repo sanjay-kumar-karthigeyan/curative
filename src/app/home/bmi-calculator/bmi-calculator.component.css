@@ -1,0 +1,16 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.bmi-component{
+  margin: 0% !important;
+  padding: 0px !important;
+  background-image: url(http://html.kodesolution.live/html/health-beauty/health-zone/v3.0/images/pattern/p9.png);
+  /* height:380px !important; */
+}
+
+.bmi-component:first-child > div{
+  border-right:1px solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,39 @@
+<div class="col-md-12 p-0 m-0">
+  <div style="height:90px">
+    <app-header (messageEvent)="receiveMessage($event)"></app-header>
+  </div>
+  <!-- <main > -->
+  <div class="container-fluid main-container">
+    <router-outlet></router-outlet>
+  </div>
+  <!-- </main> -->
+
+  <app-model-box-body [dataFromParent]="dataToModel"></app-model-box-body>
+
+
+  <ng-template #content let-modal>
+    <div class="modal-header ngb_modal">
+      <!-- <h4 class="modal-title" id="modal-basic-title">Profile update</h4> -->
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/banner_2.jpg" width="100%" height="100%" class="card-img-top">
+    </div>
+    <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div> -->
+  </ng-template>
+
+
+
+  <!-- <button (click)="loadFeature()">load feature component</button>
+<div #hostcontainer>
+</div> -->
+  <!-- <app-footer *ngIf="isfooter"></app-footer> -->
+  <app-page-footer-body *ngIf="isfooter"></app-page-footer-body>
+</div>
+<!-- <ng-template #newfooter>
+        <app-footer [data]="contact"></app-footer>
+</ng-template> -->

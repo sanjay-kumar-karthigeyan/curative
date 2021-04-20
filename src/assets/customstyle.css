@@ -1,0 +1,35 @@
+.main-container{
+    /* height:720px; */
+    padding: 0% !important;
+    margin: 0% !important;
+    /* background: #00bcec; */
+    overflow: hidden;
+}
+agm-map {
+  height: 350px;;
+  min-width: 35%;
+  width:100%;
+}
+
+.modal-backdrop.show{
+  z-index: 0 !important;
+}
+
+.hori_line_separator{
+  border:1px solid rgba(255, 255, 255, 0.1);
+}
+.verti_line_separator{
+  border:1px solid rgba(0, 0, 0, 0.1);
+}
+.custom-font-44{
+  font-size: 44px;
+}
+.custom-font-24{
+  font-size: 24px;
+}
+.custom-font-18{
+  font-size: 18px;
+}
+.custom-font-20{
+  font-size: 20px;
+}

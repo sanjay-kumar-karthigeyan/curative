@@ -1,0 +1,109 @@
+/* .invalid{
+    border:1px solid red ;
+} */
+.footer_container{
+    /* height:400px; */
+    padding: 2% 2%;
+    background-color: #1a1a1a;
+}
+.footer_container form input, .footer_container form textarea{
+    border: 1px solid #999 !important;
+    background-color: #1a1a1a;
+    color: #999999;
+}
+.footer_container header{
+    color: #dedede;
+}
+.footer_container form .form-group label{
+    margin: 0% 6% 0% 0%;
+    color: #999999;
+}
+.footer_container form .custom-select{
+    border: 1px solid #999 !important;
+    background-color: #1a1a1a;
+    color: #999999;
+}
+.footer_container form .radio-group.is-invalid .invalid-feedback,.footer_container form .radio-group.is-invalid .invalid-feedback{
+    display: block;
+}
+.curative_icon{
+    height: 50px;
+}
+.curative_icon #logo_1{
+    height: 50px;
+}
+.curative_icon #logo_2{
+    height: 50px;
+    width: 170px;
+}
+.logo_separator{
+    margin: 0% 2%;
+    height: 50px;
+    border-left: 1px solid red;
+}
+.custom-button{
+    background: #999999;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+/* .careers{
+    margin: 2% 0%;
+} */
+
+
+
+.footer_container textarea:focus,
+.footer_container input[type="text"]:focus,
+.footer_container input[type="password"]:focus,
+.footer_container input[type="datetime"]:focus,
+.footer_container input[type="datetime-local"]:focus,
+.footer_container input[type="date"]:focus,
+.footer_container input[type="month"]:focus,
+.footer_container input[type="time"]:focus,
+.footer_container input[type="week"]:focus,
+.footer_container input[type="number"]:focus,
+.footer_container input[type="email"]:focus,
+.footer_container input[type="url"]:focus,
+.footer_container input[type="search"]:focus,
+.footer_container input[type="tel"]:focus,
+.footer_container input[type="color"]:focus,
+.footer_container .uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+
+/*custom_table*/
+.custom_table td{
+    border:none !important;
+    vertical-align: middle;
+    padding: 0.25rem !important;
+} 
+
+.mac_view{
+    /* background-image: url(); */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    max-height: 530px !important;
+    min-height:480px;
+    /* padding: 73px 176px; */
+}
+.contact_footer{
+    background:#2c2c2c;
+    color: #00bcec;
+}
+.contact_address{
+    background:#1a1a1a;
+}
+
+.copy_right{
+    height:70px;
+    background:#2c2c2c;
+}
+.copy_right p{
+    color:#999999;
+}
+
+.address{
+    background: url('https://curative.s3.ap-south-1.amazonaws.com/studio_images/world-map.png') no-repeat;
+}

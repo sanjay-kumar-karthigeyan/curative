@@ -1,0 +1,12 @@
+.sticky {
+    position: fixed;
+    top: 200px;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+    z-index: 1;
+  }
+  main{
+    position: relative;
+    top:74px;
+  }

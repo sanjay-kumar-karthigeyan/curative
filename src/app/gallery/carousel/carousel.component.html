@@ -1,0 +1,49 @@
+
+<section class="gallery-block grid-gallery">
+  <div class="container col-md-12 justify-content-center text-center">
+    <!-- <div class="heading">
+      <h2>Studio</h2>
+    </div> -->
+    
+    <div class="row justify-content-center text-center" style="z-index: -999;" id="first_gal">
+      <ngx-gallery *ngIf="galleryImages_studio" [options]="galleryOptions_studio" [images]="galleryImages_studio">
+      </ngx-gallery>
+    </div>
+    <div id="second_gal">
+      <ng-container *ngFor="let data of galleryImages_studio">
+        <!-- <div class="m-2 image_gall_mob" [style.backgroundImage]="'url('+ data.small +')'" style="background-size: contain; background-repeat: no-repeat;"></div> -->
+        <img src="{{data.small}}" class="m-2 mob_gallery">
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="border border-primary border-top-0 border-right-0 border-left-0 my-5"></div> -->
+
+<!-- <section>
+  <div class="container">
+    <div class="heading">
+      <h2>Events</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12 justify-content-center text-center">
+        <ngx-gallery *ngIf="galleryImages_events" [options]="galleryOptions_events" [images]="galleryImages_events">
+        </ngx-gallery>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- <div class="border border-primary border-top-0 border-right-0 border-left-0 my-5"></div>
+
+<section class="gallery-block grid-gallery">
+  <div class="container">
+    <div class="heading">
+      <h2>Rehab</h2>
+    </div>
+    <div class="row justify-content-center text-center">
+      <ngx-gallery *ngIf="galleryImages_rehab" [options]="galleryOptions_rehab" [images]="galleryImages_rehab">
+      </ngx-gallery>
+    </div>
+  </div>
+</section> -->

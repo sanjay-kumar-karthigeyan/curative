@@ -1,0 +1,104 @@
+<div class="col-md-12 justify-content-center  service_body">
+  <div class="col-md-8 row mx-auto border my-5 service_body_content">
+    <div class="col-md-12 mx-0  my-2">
+      <div class="justify-content-center text-center">
+        <ng-container *ngTemplateOutlet="heading; context:{content:'SEDENTARY LIFESTYLE'}">
+        </ng-container>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/img_workplace_workout.jpg" class="ser_img">
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Leading a sedentary lifestyle is becoming a significant public health issue. Sedentary lifestyles appear to be increasingly widespread in many nations despite being linked to a range of chronic health conditions.'}">
+        </ng-container>
+      </div>
+
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'A sedentary lifestyle is a type of lifestyle involving little or no physical activity. A person living a sedentary lifestyle is often sitting or lying down while engaged in an activity like reading, socializing, watching television, playing video games, or using a mobile phone/computer for much of the day.'}">
+        </ng-container>
+      </div>
+
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Sedentary lifestyles increase all causes of mortality, double the risk of cardiovascular diseases, diabetes, and obesity, and increase the risks of colon cancer, high blood pressure, osteoporosis, lipid disorders, depression and anxiety. According to WHO, 60 to 85% of people in the world—from both developed and developing countries—lead sedentary lifestyles.'}">
+        </ng-container>
+      </div>
+
+      <div class="justify-content-center text-center">
+        <ng-container
+          *ngTemplateOutlet="heading; context:{content:'RECENT RESEARCHES ABOUT SEDENTARY LIFESTYLE AND THEIR EFFECT'}">
+        </ng-container>
+      </div>
+
+      <div class="">
+        <ng-container *ngTemplateOutlet="paragraph; context:{content:'India is in the midst of a demographic, epidemiological, and nutrition transition. A growing population, increasing urbanization, a shift in the patterns of diseases and changes in lifestyle characterize this transition. The past decade has seen a dramatic increase in lifestyle-related chronic diseases including obesity, diabetes mellitus, cardiovascular disease, hypertension, stroke, and all cancers (WHO 2003).
+          Urbanization has been linked to increased Western food consumption in many developing societies as the process of urbanization automatically brings with it changes in dietary practices and physical activity pattern.  In India, the level of urbanization is still comparatively low (31.2% according to the Census of India 2011), and thus there is considerable scope for increasing urbanization and population concentrations in the larger cities. 
+         Physical inactivity is not just leading to a high disease burden and deaths, but it is also posing a major threat to productivity and contributing significantly to health expenditure.
+         '}">
+        </ng-container>
+      </div>
+
+
+      <div class="ser_title">
+        <ng-container *ngTemplateOutlet="subheading; context:{content:'DANGERS OF SEDENTARY LIFESTYLE'}">
+        </ng-container>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ng-container *ngTemplateOutlet="list; context:{content:list_data.corporatewellness_1}"></ng-container>
+          </div>
+          <div class="col-md-6">
+            <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/Exercise.png" class="ser_img">
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </div>
+  </div>
+</div>
+
+<ng-template #heading let-data="content">
+  <h3>{{data}}</h3>
+</ng-template>
+
+<ng-template #subheading let-data="content">
+  <h5>{{data}}</h5>
+</ng-template>
+
+<ng-template #paragraph let-data="content">
+  <p>{{data}}</p>
+</ng-template>
+
+<ng-template #imageview let-temp="imagedata">
+  <ng-container *ngFor="let src of temp">
+    <img src="{{src}}" height="100" width="200">
+  </ng-container>
+</ng-template>
+
+<ng-template #imagedisc let-temp="imagedisc">
+  <ng-container *ngFor="let content of temp">
+    <p>{{content}}</p>
+  </ng-container>
+</ng-template>
+
+<ng-template #list let-temp="content">
+  <ul>
+    <ng-container *ngFor="let liContent  of temp">
+      <li>
+        {{liContent}}
+      </li>
+    </ng-container>
+  </ul>
+</ng-template>

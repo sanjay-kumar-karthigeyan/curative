@@ -1,0 +1,68 @@
+<div class="col-md-12 justify-content-center  service_body">
+  <div class="col-md-8 row mx-auto border my-5 service_body_content">
+    <div class="col-md-12 mx-0  my-2">
+      <div class="justify-content-center text-center">
+        <ng-container *ngTemplateOutlet="heading; context:{content:'SPORTS SPECIFIC FITNESS TRAINING'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Sport specific training is simply fitness and performance training designed specifically for athletic performance enhancement. Training programs for athletic performance enhancement could include such areas as strength, speed, power, endurance, flexibility, mobility, agility, mental preparedness (including goal setting), sleep, recovery/regeneration techniques and strategies, nutrition, rehabilitation, pre-rehabilitation, and injury risk reduction.'}">
+        </ng-container>
+      </div>
+      <br>
+
+      <div class="container col-md-12 justify-content-center">
+        <div class="row col-md-12 justify-content-center">
+          <!-- <div class="col-md-6">
+                        <ng-container *ngTemplateOutlet="list; context:{content:list_data.sports_fitness}"></ng-container>
+                      </div> -->
+          <div class="col-md-8">
+            <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/gt.jpg" class="ser_img">
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--<div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Sport specific training is simply fitness and performance training designed specifically for athletic performance enhancement. Training programs for athletic performance enhancement could include such areas as strength, speed, power, endurance, flexibility, mobility, agility, mental preparedness (including goal setting), sleep, recovery/regeneration techniques and strategies, nutrition, rehabilitation, pre-rehabilitation, and injury risk reduction.'}">
+        </ng-container>
+      </div>-->
+
+    </div>
+  </div>
+</div>
+
+<ng-template #heading let-data="content">
+  <h3>{{data}}</h3>
+</ng-template>
+
+<ng-template #subheading let-data="content">
+  <h5>{{data}}</h5>
+</ng-template>
+
+<ng-template #paragraph let-data="content">
+  <p>{{data}}</p>
+</ng-template>
+
+<ng-template #imageview let-temp="imagedata">
+  <ng-container *ngFor="let src of temp">
+    <img src="{{src}}" height="100" width="200">
+  </ng-container>
+</ng-template>
+
+<ng-template #imagedisc let-temp="imagedisc">
+  <ng-container *ngFor="let content of temp">
+    <p>{{content}}</p>
+  </ng-container>
+</ng-template>
+
+<ng-template #list let-temp="content">
+  <ul>
+    <ng-container *ngFor="let liContent  of temp">
+      <li>
+        {{liContent}}
+      </li>
+    </ng-container>
+  </ul>
+</ng-template>

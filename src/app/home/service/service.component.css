@@ -1,0 +1,79 @@
+.our_service {
+  /* background-image: url(http://html.kodesolution.live/html/health-beauty/health-zone/v3.0/images/pattern/p9.png);
+  padding: 2em 0em 4em 0em;
+  -webkit-box-shadow: 0px 0px 17px 9px rgba(77, 77, 77, 1);
+  -moz-box-shadow: 0px 0px 17px 9px rgba(77, 77, 77, 1);
+  box-shadow: 0px 0px 17px 9px rgba(77, 77, 77, 1); */
+  /* background-image: url('../../../assets/images/page-attribute.png'); */
+  /* background-repeat: no-repeat; */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.readmore_banner {
+  /* box-shadow: 0 2px 24px 0 rgb(144, 144, 144, 0.2); */
+
+  /* box-shadow: 0 2px 24px 0 rgba(165, 159, 153, 1); */
+
+  /* -webkit-box-shadow: 10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 5px 0px rgba(0, 0, 0, 0.75); */
+  height: auto !important;
+  width: 100% !important;
+  border: 1px solid #cacaca;
+box-shadow: 3px 2px 8px 2px rgba(197, 185, 185, 0.75);
+}
+
+.banner_head {
+  background: #ffb549 none repeat scroll 0 0;
+  height: 75px;
+}
+
+.readmore_banner_body {
+  background: #ffffff;
+  height: 350px !important;
+}
+
+.curve_footer {
+  background: #e4f1fe;
+}
+
+
+.readmore_banner .list_page {
+  font-family: ubuntu;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e2f2f;
+  height: 250px;
+}
+
+.bold_font {
+  color: white;
+  font: 18px bold;
+}
+
+.readmore_banner .discription {
+  height: 130px;
+  font-family: unset;
+  font-size: 15px;
+}
+#ser_mid {
+  margin-top: 25%;
+}
+#ser_mid {
+  margin-top: 50% !important;
+  width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media only screen and (max-width: 600px) { 
+  #ser_mob {
+    margin-left: 0% !important;
+  }
+  #ser_mid {
+    margin-top: 0% !important;
+  }
+  #ser_mid {
+    width: 100% !important;
+  }
+}

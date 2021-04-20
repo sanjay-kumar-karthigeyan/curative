@@ -1,0 +1,64 @@
+<div class="row m-0 p-0 mb-5 mt_6 col-md-12  tweeter_bg">
+  <div class="my-4  col-md-12">
+    <div class="justify-content-center mx-auto row text-center font-weight-bold custom-font-44 font_actief color_white">
+      Testimonials
+    </div>
+    <div class="justify-content-center mx-auto row text-center custom-font-20" style="font-weight: bold;">
+      Popular in Fitness News
+    </div>
+  </div>
+  <div class=" col-md-4 mx-auto py-2 my-0 px-10 justify-content-center text-center tweet_video" style="height:440px;">
+    <video controls>
+      <source src="https://curative.s3.ap-south-1.amazonaws.com/Video+/VID-20191228-WA0015.mp4" type="video/mp4">
+      <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <!-- <div class="row col-md-7  mx-auto my-5 justify-content-center">
+    <app-slider type="tweet" data="{{tweet_data}}"></app-slider>
+  </div> -->
+
+
+
+  <div class="row col-md-8  mx-auto my-5 justify-content-center tweeter_tweets">
+    <div [@visibilityChanged]="visiblityState" class="row mb-2 mt-2 pb-1 col mob_view">
+      <div class="row mb-3 mt-2 pb-1 col  tweets" *ngFor="let item of tweet_data; index as i">
+        <div class=" col-3">
+        <img src="https://www.w3schools.com/bootstrap4/img_avatar3.png" alt="John Doe" class="rounded-circle m-1 tweet_image"
+          style="width: 100px;height: auto;">
+        </div>
+        <div class="col-9 p-2 tweet_padd" style="padding-left: 20px !important;">
+          <div class="row col-md-12 m-0 p-0">
+            <span class="font_actief color_black font_bold " style="font-size: 17px;">{{item.name}}</span>
+            <i class="fa fa-twitter  p-1" style="color: #00bcec;"></i>
+            <div class="text-secondary">
+              <span>@</span>
+              <span>{{item.shortName}}</span>
+            </div>
+          </div>
+          <p class="my-1 tweet_mob_font" style="font-size:14px;font-weight: 600;">
+            {{item.tweet}}
+          </p>
+          <div class="my-1">
+            <span style="color: #00bcec;font-size:17px;font-weight: bold">#curativehealthstudio</span>
+          </div>
+          <div class="col-md-12 my-1">
+           <span style="display: inline-block;"><i class="fa fa-heart my-auto col-md-2 text-danger" style="font-size: 24px"></i></span>
+           <span style="display: inline-block;"><i class="fa fa-youtube my-auto col-md-2 text-danger" style="font-size: 24px"
+              (click)="changeVideoSrc(item.src)"></i></span> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 text-center justify-content-center ">
+      <span class="tweet-change-carousel mx-2" (click)="changeTweet(0)" [ngClass]="{'active':state == 0}">
+        <i class="fa fa-circle"></i>
+      </span>
+      <span class="tweet-change-carousel mx-2" (click)="changeTweet(1)" [ngClass]="{'active':state == 1}">
+        <i class="fa fa-circle"></i>
+      </span>
+    </div>
+
+  </div>
+
+</div>

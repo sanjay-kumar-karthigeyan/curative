@@ -1,0 +1,84 @@
+<div class="col-md-12 justify-content-center  service_body">
+        <div class="col-md-8 row mx-auto border my-5 service_body_content">
+          <div class="col-md-12 mx-0  my-2">
+            <div class="justify-content-center text-center">
+              <ng-container *ngTemplateOutlet="heading; context:{content:'WEIGHT MANAGEMENT'}">
+              </ng-container>
+            </div>
+            <div class="">
+              <ng-container
+                *ngTemplateOutlet="paragraph; context:{content:'Weight management is the phrase used to describe both the techniques and underlying physiological processes that contribute to a person\'s ability to attain and maintain a certain weight.'}">
+              </ng-container>
+            </div>
+            <br>
+            <div class="">
+              <ng-container
+                *ngTemplateOutlet="paragraph; context:{content:'Weight management refers to a set of practices and behaviors that are necessary to keep one\'s weight at a healthful level. Overweight and obese are not the same thing. People who are overweight weigh more than they should compared with set standards for their height. The excess weight may come from muscle tissue, body water, or bone, as well as from fat. A person who is obese has too much fat in comparison to other types of body tissue; hence, it is possible to be overweight without being obese. '}">
+              </ng-container>
+            </div>
+            <br>
+            <div class="">
+              <ng-container
+                *ngTemplateOutlet="paragraph; context:{content:'The purpose of weight management is to help each patient achieve and stay at the best weight possible the context of overall health, occupation, and living situation.'}">
+              </ng-container>
+            </div>
+            <br>
+            <div class="">
+              <ng-container
+                *ngTemplateOutlet="paragraph; context:{content:'Regular physical exercise is a major part of weight management because it increases the number of calories used by the body and because it helps the body to replace fat with lean muscle tissue. Exercise also serves to lower emotional stress levels and to promote a general sense of well-being. People should consult a doctor before beginning an exercise program, however, to make sure that the activity that interests them is safe relative to any other health problems they may have. For example, people with osteoarthritis should avoid high-impact sports that are hard on the knee and ankle joints. Good choices for most people include swimming, walking, cycling, and stretching exercises.'}">
+              </ng-container>
+            </div>
+            <br>
+            <div class="container col-md-12 justify-content-center">
+              <div class="row col-md-12 justify-content-center">
+                <!-- <div class="col-md-6">
+                                    <ng-container *ngTemplateOutlet="list; context:{content:list_data.sports_fitness}"></ng-container>
+                                  </div> -->
+                <div class="col-md-8">
+                  <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/obes.png" class="ser_img">
+                </div>
+              </div>
+            </div>
+            <br>
+			
+      
+      
+      
+          </div>
+        </div>
+      </div>
+      
+      <ng-template #heading let-data="content">
+        <h3>{{data}}</h3>
+      </ng-template>
+      
+      <ng-template #subheading let-data="content">
+        <h5>{{data}}</h5>
+      </ng-template>
+      
+      <ng-template #paragraph let-data="content">
+        <p>{{data}}</p>
+      </ng-template>
+      
+      <ng-template #imageview let-temp="imagedata">
+        <ng-container *ngFor="let src of temp">
+          <img src="{{src}}" height="100" width="200">
+        </ng-container>
+      </ng-template>
+      
+      <ng-template #imagedisc let-temp="imagedisc">
+        <ng-container *ngFor="let content of temp">
+          <p>{{content}}</p>
+        </ng-container>
+      </ng-template>
+      
+      <ng-template #list let-temp="content">
+        <ul>
+          <ng-container *ngFor="let liContent  of temp">
+            <li>
+              {{liContent}}
+            </li>
+          </ng-container>
+        </ul>
+      </ng-template>
+      

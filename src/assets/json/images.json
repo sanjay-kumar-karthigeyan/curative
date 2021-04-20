@@ -1,0 +1,425 @@
+{
+    "images": [
+        {
+            "studio": [
+                {
+                    "galleryoption": [
+                        {
+                            "image": false,
+                            "imageDescription": true,
+                            "height":"800px",
+                            "width":"1200px",
+                            "thumbnailsColumns": 5,
+                            "thumbnailsRemainingCount": true,
+                            "thumbnailsRows": 3
+                        }
+                    ]
+                },
+                {
+                    "gallerimages": [
+					{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_165907.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_165907.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_165907.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170146.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170146.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170146.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170107_134441.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170107_134441.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170107_134441.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170438.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170438.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170438.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_164723.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_164723.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_164723.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170438.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170438.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20170923_170438.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20171119_201630.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20171119_201630.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20171119_201630.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20180413_100828_HDR.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20180413_100828_HDR.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20180413_100828_HDR.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+						{
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG-20161217-WA0009.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG-20161217-WA0009.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG-20161217-WA0009.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG-20191231-WA0010.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG-20191231-WA0010.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG-20191231-WA0010.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0640-min.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0640-min.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0640-min.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_101649.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_101649.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_101649.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_102216.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_102216.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_102216.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103237.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103237.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103237.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103711.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103711.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103711.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103814.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103814.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_103814.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_104826.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_104826.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_104826.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_105024.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_105024.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_105024.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190805_125023.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190805_125023.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190805_125023.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_105711.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_105711.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_105711.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_143101.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_143101.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190210_143101.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190406_123316.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190406_123316.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190406_123316.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190811_120838.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190811_120838.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20190811_120838.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_075926.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_075926.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_075926.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_081253.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_081253.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_081253.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_100054.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_100054.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191002_100054.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191006_111520.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191006_111520.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191006_111520.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_152215.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_152215.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_152215.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_152253.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_152253.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_152253.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_155824.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_155824.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_20191119_155824.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ingo1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ingo1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ingo1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ingo.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ingo.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ingo.jpg",
+                            "label": "",
+                            "description": ""
+                        }
+                        
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "events": [
+                {
+                    "galleryoption": [
+                        {
+                            "image": false,
+                            "imageDescription": true,
+                            "height":"300px",
+                            "width":"800px",
+                            "thumbnailsColumns": 10
+                        }
+                    ]
+                },
+                {
+                    "gallerimages": [
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/ergonomie-bu%CC%88ro1.jpg",
+                            "label": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rehab": [
+                {
+                    "galleryoption": [
+                        {
+                            "image": false,
+                            "imageDescription": true,
+                            "height":"500px",
+                            "width":"700px",
+                            "thumbnailsColumns": 3,
+                            "thumbnailsRemainingCount": true,
+                            "thumbnailsRows": 2
+                        }
+                    ]
+                },
+                {
+                    "gallerimages": [
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0636.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0636.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0636.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0637.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0637.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0637.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0638.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0638.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0638.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0639.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0639.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0639.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0640.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0640.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0640.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "label": "",
+                            "description": ""
+                        },
+                        {
+                            "small": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "medium": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "big": "https://curative.s3.ap-south-1.amazonaws.com/studio_images/_DSC0635.JPG",
+                            "label": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

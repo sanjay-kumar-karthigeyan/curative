@@ -1,0 +1,158 @@
+<div class="row h-100 col-md-12 col-xs-12 justify-content-center mx-auto our_service  mb-4" style="margin-top:7em !important">
+  <div class="col-md-12 text-center font-weight-bold custom-font-44 mb-3">
+    our serv<span class="text-danger">i</span>ce's
+  </div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-3 justify-content-center">    
+        <div class="readmore_banner  m-0 p-0 h-100  my-5 mt-2" *ngFor="let data of service_data | slice:0:2" id="ser_mob">
+        <div class="col-md-12 justify-content-center text-center banner_head px-0 align-middle">
+          <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/price-tag.png" class="float-right">
+          <h5 class="pt-4 ubuntu">{{data.title}}</h5>
+        </div>
+        <div class="col-md-12  h-50 m-0 p-0 readmore_banner_body">
+          <div class="col-md-12 p-3 discription">
+            {{data.discription}}
+          </div>
+          <div class="col-md-12 justify-content-center list_page">
+            <ul>
+              <li *ngFor="let list of data.list">{{list}}</li>
+            </ul>
+          </div>
+        </div>
+        <br><br>
+        <div class="col-md-12 py-3 justify-content-center text-center">
+          <button (click)="changeState(data.state)" type="button" class="btn btn-secondary">
+            <i class="fa fa-arrow-circle-right"></i> Read More
+          </button>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4 justify-content-center">
+          <div class="readmore_banner  m-0 p-0 h-100 my-5 mt-2" *ngFor="let data of service_data | slice:4:5" id="ser_mid">
+              <div class="col-md-12 justify-content-center text-center banner_head px-0 align-middle">
+                <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/price-tag.png" class="float-right">
+                <h5 class="pt-4 ubuntu">{{data.title}}</h5>
+              </div>
+              <div class="col-md-12  h-50 m-0 p-0 readmore_banner_body">
+                <div class="col-md-12 p-3 discription">
+                  {{data.discription}}
+                </div>
+                <div class="col-md-12 justify-content-center list_page">
+                  <ul>
+                    <li *ngFor="let list of data.list">{{list}}</li>
+                  </ul>
+                </div>
+              </div>
+              <br><br>
+              <div class="col-md-12 py-3 justify-content-center text-center">
+                <button (click)="changeState(data.state)" type="button" class="btn btn-secondary">
+                  <i class="fa fa-arrow-circle-right"></i> Read More
+                </button>
+              </div>
+            </div>
+      </div>
+
+      <div class="col-md-3 justify-content-center">
+          <div class="readmore_banner  m-0 p-0 h-100 my-5 mt-2" *ngFor="let data of service_data | slice:2:4">
+              <div class="col-md-12 justify-content-center text-center banner_head px-0 align-middle">
+                <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/price-tag.png" class="float-right">
+                <h5 class="pt-4 ubuntu">{{data.title}}</h5>
+              </div>
+              <div class="col-md-12  h-50 m-0 p-0 readmore_banner_body">
+                <div class="col-md-12 p-3 discription">
+                  {{data.discription}}
+                </div>
+                <div class="col-md-12 justify-content-center list_page">
+                  <ul>
+                    <li *ngFor="let list of data.list">{{list}}</li>
+                  </ul>
+                </div>
+              </div>
+              <br><br>
+              <div class="col-md-12 py-3 justify-content-center text-center">
+                <button (click)="changeState(data.state)" type="button" class="btn btn-secondary">
+                  <i class="fa fa-arrow-circle-right"></i> Read More
+                </button>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-1"></div>
+      
+  </div>
+</div>
+
+
+
+
+  <!-- <div class="readmore_banner col-md-3 m-0 p-0 h-100 mx-3 mt-2">
+    <div class="col-md-12 justify-content-center text-center banner_head px-0 align-middle">
+      <img src="../../../assets/images/price-tag.png" class="float-right">
+      <h4 class="pt-4 ubuntu">Rehabilitation</h4>
+    </div>
+    <div class="col-md-12  h-50 readmore_banner_body">
+      <div class="col-md-12">
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+      </div>
+      <div class="col-md-12 justify-content-center ">
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+        </ul>
+      </div>
+     <div class="col-md-8 my-3  justify-content-center mx-auto">
+                    <span>inteferential therapy</span>
+                    <span class="mx-3">inteferential therapy</span> 
+                </div>
+                <div class="col-md-8 my-3  justify-content-center mx-auto">
+                    <span><i class="fa fa-10x fa-mobile" style="font-size:35px !important;display: inline"></i></span>
+                    <span>inteferential therapy</span>
+                </div>
+                <div class="col-md-8 my-3  justify-content-center mx-auto">
+                    <span><i class="fa fa-10x fa-mobile" style="font-size:35px !important;display: inline"></i></span>
+                    <span>inteferential therapy</span>
+                </div> 
+
+
+    </div>
+    <div class="col-md-12 py-3 h-25 readmore_banner_body justify-content-center text-center">
+      <button (click)="changeState('/service/rehabilation')" type="button" class="btn btn-secondary">
+        <i class="fa fa-arrow-circle-right"></i> Read More
+      </button>
+    </div>
+  </div> -->
+
+
+
+  <!-- <div class="readmore_banner col-md-3 m-0 p-0 h-100 mx-3 mt-2">
+    <div class="col-md-12 justify-content-center text-center banner_head px-0 align-middle">
+      <img src="../../../assets/images/price-tag.png" class="float-right">
+      <h4 class="pt-4 ubuntu">Fitness</h4>
+    </div>
+    <div class="col-md-12  h-50 readmore_banner_body">
+      <div class="col-md-12">
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+      </div>
+      <div class="col-md-12 justify-content-center ">
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet</li>
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="col-md-12 py-3 h-25 readmore_banner_body justify-content-center text-center">
+      <button (click)="changeState('/service/fitness')" type="button" class="btn btn-secondary">
+        <i class="fa fa-arrow-circle-right"></i> Read More
+      </button>
+    </div>
+  </div> -->
+</div>

@@ -1,0 +1,73 @@
+.testimonials {
+  background: white;
+  margin: 0px;
+
+}
+
+.tweets {
+  max-width: 500px;
+  min-width: 400px;
+  width: 400px;
+  height: auto;
+  max-height: 160px
+}
+.mt_6{
+  margin-top:0em !important; 
+}
+
+/* .tweets-content{
+     height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} */
+.scroll-down {
+  cursor: pointer;
+}
+
+.nodrop_arrow.dropdown-toggle::after {
+  border: 0px solid !important;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.tweeter_bg {
+  /* background-image: url(http://html.kodesolution.live/html/health-beauty/health-zone/v3.0/images/pattern/p9.png); */
+  background-image: url('https://curative.s3.ap-south-1.amazonaws.com/studio_images/bg_areyouready.jpg');
+  background-repeat: no-repeat;
+}
+
+.tweet_video video{
+    max-width: 700px;
+}
+.tweet-change-carousel{
+  cursor: pointer;
+}
+.tweet-change-carousel i{
+  font-size: 12px;
+}
+.active i{
+  color: #00bcec;
+}
+
+@media only screen and (max-width: 600px) { 
+  .tweet_image{
+    width: 69px !important;
+  }
+  .tweet_mob_font{
+    font-size: 13px !important;
+  }
+  .mob_view{
+	  padding:0px !important;
+  }
+  .tweeter_tweets{
+	  padding:0px !important;
+  }
+  .tweet_padd{
+	  padding-left:10px !important
+  }
+}

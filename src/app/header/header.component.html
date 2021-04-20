@@ -1,0 +1,193 @@
+<nav class="top_header navbar p-0 col-lg-12 navbar-expand-lg navbar-light navbar-default navbar-fixed-top m-0">
+  <div class="col-md-12 float-right justify-content-right p-0" id="first_nav">
+    <div class="col-md-12 col-xs-12 mx-auto p-0">
+      <i class="fa fa-1x fa-phone mx-1"></i>
+      <span class="color_blue mob_font">044-45566832 / info@curativehealthstudio.com</span>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="row col-md-12" style="position: relative;top:31px;z-index: 9;" id="second_nav">
+  <div class="col-md-3 m-0 p-0 pl-3 transition" [ngClass]="{'':isShrink}">
+    <a class="navbar-brand" href="#" [ngClass]="{'':isShrink}">
+      <img src="https://curative.s3.ap-south-1.amazonaws.com/resize/studio/Logo1.png" id="logo_1">
+      <img src="https://curative.s3.ap-south-1.amazonaws.com/resize/studio/Logo2.png" id="logo_2">
+    </a>
+  </div>
+  <div class="col-md-6">
+    <nav class="top_secondHeader navbar col-md-6 navbar-expand-lg navbar-light navbar-default navbar-fixed-top m-0 p-0"
+      [ngClass]="{'bg_new':isShrink}">
+      <div class="navbar-header">
+        <button class="navbar-toggler float-right m-2" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="container-fluid" id="fullheader" [ngClass]="{'reduced_height':isShrink}">
+
+        <div class="collapse navbar-collapse justify-content-center text-center m-0 p-0" id="navbarSupportedContent"
+          [ngClass]="{'shrink_height':isShrink}">
+          <ul class="nav navbar-nav">
+            <li><a class="nav-link " [routerLink]="['/home']" routerLinkActive="active">home</a></li>
+            <li class=" dropdown  ">
+              <a class="nav-link dropdown-toggle dropdown-item" href="Javascript:void(0)" id="navbarDropdown"
+                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                routerLinkActive="active">
+                our services
+              </a>
+              <div class="dropdown-menu dropright m-0 p-0" aria-labelledby="navbarDropdown" #navDropDown>
+
+                <a class="nav-link service_dropdown" href="Javascript:void(0)" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  [routerLink]="['/service/physiotherapy']" routerLinkActive="active">
+                  Physiotherapy
+                </a>
+
+                <a class="dropdown-item dropdown-toggle service_dropdown" href="Javascript:void(0)"
+                  id="navbarDropdownMenuLink_2" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" appHeaderListener>Rehabilitation
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_2">
+                    <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/rehabilation']"
+                      [queryParams]="{ order: 'postoperative'}" routerLinkActive="active">Post Operative</a>
+                    <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/rehabilation']"
+                      [queryParams]="{ order: 'sportsinjury'}" routerLinkActive="active">Sports Injury</a>
+
+                    <a class="dropdown-item" href="Javascript:void(0)"
+                      [routerLink]="['/service/rehabilation/womenshealth']" routerLinkActive="active">Womens Health</a>
+                  </div>
+                </a>
+
+
+                <a class="dropdown-item dropdown-toggle service_dropdown" href="Javascript:void(0)" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appHeaderListener
+                  id="navbarDropdownMenuLink_3">
+                  Fitness
+
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink_3">
+                    <a class="dropdown-item" href="Javascript:void(0)"
+                      [routerLink]="['/service/fitness/generalfitness']" routerLinkActive="active">General Fitness</a>
+                    <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/sportsfitness']"
+                      routerLinkActive="active">Sports Fitness</a>
+                    <a class="dropdown-item" href="Javascript:void(0)"
+                      [routerLink]="['/service/fitness/functionalfitness']" routerLinkActive="active">Functional
+                      Training</a>
+                    <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/geriatic']"
+                      routerLinkActive="active">Geriatic</a>
+                    <a class="dropdown-item" href="Javascript:void(0)"
+                      [routerLink]="['/service/fitness/weightmanagement']" routerLinkActive="active">Weight
+                      Management</a>
+                  </div>
+
+                </a>
+
+                <a class="nav-link service_dropdown" href="Javascript:void(0)" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  [routerLink]="['/service/corporatewellness']" routerLinkActive="active">
+                  Corporate
+                </a>
+
+
+              </div>
+            </li>
+            <li><a class="nav-link " [routerLink]="['/gallery']" routerLinkActive="active">gallery</a></li>
+            <li><a class="nav-link " [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="col-md-3 h-100 m-0 p-0 pb-3 pt-3  float-right social_icons justify-content-right text-right transition"
+    [ngClass]="{'':isShrink}">
+    <app-socialmedia (messageToHeader)="messageToApp($event)"></app-socialmedia>
+  </div>
+
+</div>
+
+
+<div class="header_design col-md-12 " [ngClass]="{'animate':isShrink}"></div>
+
+<!-- mobile-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" id="mobile_nav">
+  <a class="navbar-brand" href="#"><img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/Logo2.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+    style="float: right;">
+    <span class="navbar-toggler-icon" style="color: white;font-weight: bold;"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="z-index: 9999999;position: relative;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="['/home']" routerLinkActive="active">home</a>
+      </li>
+      <li class=" dropdown  ">
+        <a class="nav-link dropdown-toggle dropdown-item" href="Javascript:void(0)" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">
+          our services
+        </a>
+        <div class="dropdown-menu dropright m-0 p-0" aria-labelledby="navbarDropdown" #navDropDown>
+
+          <a class="nav-link service_dropdown" href="Javascript:void(0)" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" [routerLink]="['/service/physiotherapy']"
+            routerLinkActive="active">
+            Physiotherapy
+          </a>
+
+          <a class="dropdown-item dropdown-toggle service_dropdown" href="Javascript:void(0)"
+            id="navbarDropdownMenuLink_2" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false" appHeaderListener>Rehabilitation
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink_2">
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/rehabilation']"
+                [queryParams]="{ order: 'postoperative'}" routerLinkActive="active">Post Operative</a>
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/rehabilation']"
+                [queryParams]="{ order: 'sportsinjury'}" routerLinkActive="active">Sports Injury</a>
+
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/rehabilation/womenshealth']"
+                routerLinkActive="active">Womens Health</a>
+            </div>
+          </a>
+
+
+          <a class="dropdown-item dropdown-toggle service_dropdown" href="Javascript:void(0)" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" appHeaderListener
+            id="navbarDropdownMenuLink_3">
+            Fitness
+
+            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink_3">
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/generalfitness']"
+                routerLinkActive="active">General Fitness</a>
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/sportsfitness']"
+                routerLinkActive="active">Sports Fitness</a>
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/functionalfitness']"
+                routerLinkActive="active">Functional
+                Training</a>
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/geriatic']"
+                routerLinkActive="active">Geriatic</a>
+              <a class="dropdown-item" href="Javascript:void(0)" [routerLink]="['/service/fitness/weightmanagement']"
+                routerLinkActive="active">Weight
+                Management</a>
+            </div>
+          </a>
+
+          <a class="nav-link service_dropdown" href="Javascript:void(0)" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            [routerLink]="['/service/corporatewellness']" routerLinkActive="active">
+            Corporate
+          </a>
+
+
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="['/gallery']" routerLinkActive="active">gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="['/contact']" routerLinkActive="active">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>

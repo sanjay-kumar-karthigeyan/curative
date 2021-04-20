@@ -1,0 +1,52 @@
+.trainer-container{
+    background-image: url('https://curative.s3.ap-south-1.amazonaws.com/studio_images/page-attribute.png');
+    /* background: #ffffff; */
+}
+.profile-container{
+    /* height: 274px; */
+    overflow: hidden;
+    /* border: 2px solid; */
+    padding: 0px;
+}
+.profile-discription{
+    position: absolute; 
+    transition: .35s linear;
+    top: -400px;
+    padding: 0px;
+}
+
+.animate_discription{
+    transition: .35s linear;
+    color: white;
+    top: 0%
+}
+.discription_content{
+    background: #000000;
+    color: white;
+}
+.gray_area{
+    background: #b1b1b1;
+    opacity: 0.75;
+    height: 50px;
+    padding: 5rem !important;
+}
+.trainer_name{
+  position: absolute;
+  bottom: 40px;
+  background: #d2cfcfb0;
+}
+
+@media only screen and (max-width: 600px) {
+    .profile-discription{
+        position: absolute; 
+        transition: .35s linear;
+        top: -430px ;
+        padding: 0px;
+    }
+    .animate_discription{
+        transition: .35s linear;
+        color: white;
+        top: 0%
+    }
+
+  }

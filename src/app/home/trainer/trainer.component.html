@@ -1,0 +1,25 @@
+<div class="row h-100 col-md-12 justify-content-center mx-auto  py-5 pt-5 pb-0 trainer-container">
+  <div class="col-md-12 text-center font-weight-bold custom-font-44 my-3">
+    Our Sta<span class="text-danger">f</span>fs
+  </div>
+  <div *ngFor="let data of profile; let i=index" class="col-md-3 profile-container my-5" (mouseenter)="hover(true,i)"
+    (mouseleave)="hover(false,i)">
+    <div class="row justify-content-center mx-0 px-0 ">
+      <img src="{{data.image}}" class="col-md-9 px-0 mx-0" alt="John Doe" style="height:340px;max-width: 280px;">
+      <h4 class="trainer_name px-auto py-2" >{{data.name}}</h4>
+      <h6 class="trainer_name  py-1 px-3 text-center" style="width:200px;bottom:15px">{{data.specialist}}</h6>
+
+      <div class="row col-md-9 profile-discription flex-column d-flex justify-content-center px-0 mx-0" style="max-width: 280px"  id='discription_{{i}}'>
+        <div class="discription_content  ubuntu col-md-12 p-4 mx-0" >
+          {{data.data}}
+        </div>
+        <div class="p-2 flex-grow-1 gray_area col-md-12" >
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

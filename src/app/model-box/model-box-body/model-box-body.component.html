@@ -1,0 +1,64 @@
+<div class="modal fade" id="model_window">
+  <div class="modal-dialog">
+    <ng-container [ngSwitch]="dataFromParent">
+      <ng-container *ngSwitchCase="'video'">
+        <ng-container *ngTemplateOutlet="videoPlayer"></ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'profile'">
+        <ng-container *ngTemplateOutlet="profile"></ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #videoPlayer>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">video</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class=" my-3 col-md-12  embed-responsive embed-responsive-1by1">
+        <iframe id="player" type="text/html" class="embed-responsive-item"
+          src="https://www.youtube.com/embed/7YcW25PHnAA" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+</ng-template>
+<ng-template #profile>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">Sudhershan</h4>
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="card">
+        <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/IMG_9982.jpeg" width="100%" height="575px" class="card-img-top">
+		
+        <div class="card-body">
+		<h3>Sudhershan.B.P MBA,IFA,ACE</h3>
+		<br>
+		<ul>
+			<li>Founder of Curative Health Studio</li>
+			<li>Asia Kettlebell Champion under WKSF(World Kettlebell Sports Federation).</li>
+			<li>IFA(International Fitness association) certified group fitness instructor & personal trainer (step-kickboxing-weight training)</li>
+			<li>ACE (American council on exercise) certified personal trainer</li>
+			<li>Certified Kettlebell instructor</li>
+			<li>Certified Functional fitness instructor</li>
+			<li>Certified Health and fitness instructor</li>
+			<li>Certification in Pilates Mat L1</li>
+			<li>Over 10Yrs of experience in fitness industry</li>
+			<li>2009/2010 WON best physique competition in university level.</li>
+		</ul>
+		<br>
+		<p>Started my carrier as a part time gym instructor and my fascination towards fitness started from my teenage days which pushed me to exercise regularly and be fit. Later from higher secondry the thought process about the fitness and training people struck my mind hard that I decided to prove as a health professional as my goal. </p>
+		</div>
+      </div>
+    </div>
+    <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-dismiss="modal">see profile</button>
+    </div> -->
+  </div>
+</ng-template>

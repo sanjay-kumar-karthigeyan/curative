@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+@import './assets/customstyle.css';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+  height: 100%;
+  background: #2c2c2c;
+}
+
+.font_actief {
+  font-family: 'Actief Grotesque WT', sans-serif;
+}
+
+.color_white {
+  color: white;
+}
+
+.color_black {
+  color: #000000c7;
+}
+
+.font_blue {
+  color: #00bcec;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.font_bold {
+  font-weight: bold
+}
+
+.ser_img {
+  width: 400px;
+  height: auto;
+}
+
+.ser_title {
+  background-color: skyblue;
+  padding: 10px;
+}
+
+.modal,
+ngx-gallery-preview {
+  z-index: 99999 !important;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .ser_img {
+    width: 200px;
+    height: auto;
+  }
+  .mob_image{
+    width: 300px !important;
+    height: auto !important;
+  }
+  ngb-modal-window{
+    background: #9494944f !important;
+    padding-top: 108px !important;
+  }
+}

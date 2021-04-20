@@ -1,0 +1,102 @@
+<div class="col-md-12 justify-content-center  service_body">
+  <div class="col-md-8 row mx-auto border my-5 service_body_content">
+    <div class="col-md-12 mx-0  my-2">
+      <div class="justify-content-center text-center">
+        <ng-container *ngTemplateOutlet="heading; context:{content:'Women Wellness Workout and its importance'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'It is important to understand that there are several physical and physiological attributes that are unique to women, and physiotherapy plays an important role in women\'s health..'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Three functions, in particular, are unique to women. These include menstruation, pregnancy, and lactation. These functions are intricately tied to complex hormonal patterns in women, which also influence behaviour.'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="subheading; context:{content:'Some of the fundamental physical differences between men and women include:'}">
+        </ng-container>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ng-container *ngTemplateOutlet="list; context:{content:list_data.men_women}"></ng-container>
+          </div>
+          <div class="col-md-6">
+            <!-- <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/-Physiotherapy.jpg" class="ser_img"> -->
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Physiotherapists understand the physical differences (and unique needs) of the female population and are uniquely qualified to assist women to live healthy, pain-free lives.'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container *ngTemplateOutlet="subheading; context:{content:'Healthy Aging for Older Women'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Specific actions need to be taken to ensure healthy aging for older women. Physiotherapy can help identify (and eliminate) risk factors for falls and fractures. Regular strengthening and weight-bearing exercise can slow down the reduction in bone density as women age. You may be asked to visit your physician to learn about the risks and benefits of hormone replacement therapy. Screening for calcium, vitamin D and vitamin B12 deficiency is also recommended. Pelvic floor dysfunction and incontinence can also be treated with physiotherapy.'}">
+        </ng-container>
+      </div>
+      <div class="ser_title">
+        <ng-container
+          *ngTemplateOutlet="subheading; context:{content:'Here are some of the conditions (some of which tend to be more common among women) in which physiotherapy can play an important role:'}">
+        </ng-container>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ng-container *ngTemplateOutlet="list; context:{content:list_data.women_treatment}"></ng-container>
+          </div>
+          <div class="col-md-6">
+            <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/women-health4.jpg" class="ser_img">
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<ng-template #heading let-data="content">
+  <h3>{{data}}</h3>
+</ng-template>
+
+<ng-template #subheading let-data="content">
+  <h5>{{data}}</h5>
+</ng-template>
+
+<ng-template #paragraph let-data="content">
+  <p>{{data}}</p>
+</ng-template>
+
+<ng-template #imageview let-temp="imagedata">
+  <ng-container *ngFor="let src of temp">
+    <img src="{{src}}" height="100" width="200">
+  </ng-container>
+</ng-template>
+
+<ng-template #imagedisc let-temp="imagedisc">
+  <ng-container *ngFor="let content of temp">
+    <p>{{content}}</p>
+  </ng-container>
+</ng-template>
+
+<ng-template #list let-temp="content">
+  <ul>
+    <ng-container *ngFor="let liContent  of temp">
+      <li>
+        {{liContent}}
+      </li>
+    </ng-container>
+  </ul>
+</ng-template>

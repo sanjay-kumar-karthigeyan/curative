@@ -1,0 +1,101 @@
+<div class="col-md-12 justify-content-center  service_body">
+  <div class="col-md-8 row mx-auto border my-5 service_body_content">
+    <div class="col-md-12 mx-0  my-2">
+      <div class="justify-content-center text-center">
+        <ng-container *ngTemplateOutlet="heading; context:{content:'GERIATRICS'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="paragraph; context:{content:'Geriatrics is the branch of medicine that focuses on health promotion, prevention, and diagnosis and treatment of disease and disability in older adults.'}">
+        </ng-container>
+      </div>
+      <div class="">
+        <ng-container
+          *ngTemplateOutlet="subheading; context:{content:'BENEFITS OF PHYSICAL EXERCISE IN ELDERLY POPULATION'}">
+        </ng-container>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ng-container *ngTemplateOutlet="list; context:{content:list_data.geriatric}"></ng-container>
+          </div>
+          <div class="col-md-6">
+            <!-- <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/-Physiotherapy.jpg" class="ser_img"> -->
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="ser_title">
+        <ng-container
+          *ngTemplateOutlet="subheading; context:{content:'Exercise improves overall immune function, which is important for seniors as their immune systems are often compromised'}">
+        </ng-container>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ng-container *ngTemplateOutlet="list; context:{content:list_data.geriatric_1}"></ng-container>
+          </div>
+          <div class="col-md-6">
+            <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/geriatc.jpg" class="ser_img">
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="ser_title">
+        <ng-container
+          *ngTemplateOutlet="subheading; context:{content:'We offer treatment for '}">
+        </ng-container>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <ng-container *ngTemplateOutlet="list; context:{content:list_data.geriatric_2}"></ng-container>
+          </div>
+          <div class="col-md-6">
+            <img src="https://curative.s3.ap-south-1.amazonaws.com/studio_images/geriatc2.jpg" class="ser_img">
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </div>
+  </div>
+</div>
+
+<ng-template #heading let-data="content">
+  <h3>{{data}}</h3>
+</ng-template>
+
+<ng-template #subheading let-data="content">
+  <h5>{{data}}</h5>
+</ng-template>
+
+<ng-template #paragraph let-data="content">
+  <p>{{data}}</p>
+</ng-template>
+
+<ng-template #imageview let-temp="imagedata">
+  <ng-container *ngFor="let src of temp">
+    <img src="{{src}}" height="100" width="200">
+  </ng-container>
+</ng-template>
+
+<ng-template #imagedisc let-temp="imagedisc">
+  <ng-container *ngFor="let content of temp">
+    <p>{{content}}</p>
+  </ng-container>
+</ng-template>
+
+<ng-template #list let-temp="content">
+  <ul>
+    <ng-container *ngFor="let liContent  of temp">
+      <li>
+        {{liContent}}
+      </li>
+    </ng-container>
+  </ul>
+</ng-template>
